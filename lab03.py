@@ -71,9 +71,9 @@ def question_5(a: list) -> list:
     :param a: A list of integers used to generate the return value
     :return: A list of values filtered out from the given list containing values that are divisible by 3.
     """
-
+    two_again = [x for x in a if x%3==0]
     # TODO: Implement me properly.
-    return []
+    return two_again
 
 
 def question_6(a: list) -> list:
