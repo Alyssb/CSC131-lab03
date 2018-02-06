@@ -99,8 +99,9 @@ def even_filter(a: dict) -> list:
     :param a: A dictionary indexed by integer keys
     :return: A list of elements associated with the keys that are evenly divisible by 2 is returned.
     """
+    sevon = [str(a[x]) for x in a if int(x)%2==0]
     # TODO: Implement me properly.
-    return []
+    return sevon
 
 
 def find_min(x: int, y: int) -> int:
