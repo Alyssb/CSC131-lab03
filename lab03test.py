@@ -20,7 +20,7 @@ class MyTestCase(unittest.TestCase):
     test_dict = {}
 
     def setUp(self):
-        self.test_list = [range(1, 11)]
+        self.test_list = list(range(1, 11))
         self.test_dict = {1: "one", 3: "three", 4: "four", 5: "five", 8: "eight", 10: "ten"}
 
     def tearDown(self):
