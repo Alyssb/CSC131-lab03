@@ -112,8 +112,9 @@ def find_min(x: int, y: int) -> int:
     :param y: another number used in the comparison
     :return: The minimum of the two arguments is returned.
     """
+    ans = x if x>y else y
     # TODO: Implement me properly.
-    return 0
+    return ans
 
 
 def main() -> int:
