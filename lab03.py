@@ -13,44 +13,41 @@ EXIT_SUCCESS = 0
 def question_1(a: list) -> list:
     """
     Using the map function and a lambda argument, write an expression that produces a list of the cubes of the
-    values in a. Assign the result to a variable called m and return m.
+    values in a and return the resulting list.
     :param a: A list of integers used to generate the return value
     :return: A list of cubes of the given list values is returned.
     """
-    m = []
     # TODO: Implement me properly.
-    return m
+    return []
 
 
 def question_2(a: list) -> list:
     """
     Using the filter function and a lambda argument, write an expression that produces a list of the values in a that
-    are divisible by 3. Assign the result to a variable called f1 and return f1.
+    are divisible by 3 and return the resulting list.
     :param a: A list of integers used to generate the return value
     :return: A list of values filtered out from the given list containing values that are divisible by 3.
     """
-    f1 = []
     # TODO: Implement me properly.
-    return f1
+    return []
 
 
 def question_3(a: list) -> str:
     """
     Using the reduce function and a lambda argument, write an expression that returns the result of concatenating all
-    the digits in a. Assign the result to a variable called r1 and return r1. For example, if a = list(range(1, 11)),
+    the digits in a and return the resulting string. For example, if a = list(range(1, 11)),
     the the return value of this function would be the string '12345678910'
     :param a: A list to reduce as prescribed.
     :return: The string resulting from the concatenation of the digits in the given list.
     """
-    r1 = ''
     # TODO: Implement me properly.
-    return r1
+    return ''
 
 
 def question_4(a: list) -> list:
     """
     Use a list comprehension to produce the same list as in question 1 (i.e., the new list will contain the cubes of the
-    values in a).
+    values in a). See https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions.
     :param a: A list of integers used to generate the return value
     :return: A list of cubes of the given list values is returned.
     """
@@ -61,6 +58,7 @@ def question_4(a: list) -> list:
 def question_5(a: list) -> list:
     """
     Use a list comprehension to produce the same list as in question 2.
+    See https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions.
     :param a: A list of integers used to generate the return value
     :return: A list of values filtered out from the given list containing values that are divisible by 3.
     """
@@ -70,8 +68,9 @@ def question_5(a: list) -> list:
 
 def question_6(a: list) -> list:
     """
-    Use a list comprehension to produce a list containing the cubes of the values in a that are divisible by 3. The
-    output from this step is the list [27, 216, 729]
+    Use a list comprehension to produce a list containing the cubes of the values in a that are divisible by 3. For
+    example, if a = list(range(1, 11)), then the output from this function would be the list [27, 216, 729].
+    See https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions.
     :param a: A list of integers used to generate the return value
     :return: A list containing the cubes of the values in a that are divisible by 3 is returned.
     """
@@ -85,6 +84,7 @@ def even_filter(a: dict) -> list:
     of the elements associated with the keys that are evenly divisible by 2. For example,
     if a = {1: "one",  3: "three", 4: "four", 5: "five", 8: "eight", 10: "ten"},
     then even_filter(data) = ['four', 'eight', 'ten']
+    See https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions.
     :param a: A dictionary indexed by integer keys
     :return: A list of elements associated with the keys that are evenly divisible by 2 is returned.
     """
