@@ -84,8 +84,9 @@ def question_6(a: list) -> list:
     :param a: A list of integers used to generate the return value
     :return: A list containing the cubes of the values in a that are divisible by 3 is returned.
     """
+    six = [x**3 for x in a if x%3==0]
     # TODO: Implement me properly.
-    return []
+    return six
 
 
 def even_filter(a: dict) -> list:
