@@ -17,8 +17,14 @@ def question_1(a: list) -> list:
     :param a: A list of integers used to generate the return value
     :return: A list of cubes of the given list values is returned.
     """
+    l = []
+    for i in a:
+        val = map((lambda x: x**3),i)
+        l.append(val)
+        print(val)
+    print(val)
     # TODO: Implement me properly.
-    return []
+    return l
 
 
 def question_2(a: list) -> list:
@@ -128,8 +134,8 @@ def main() -> int:
     print("even_filter(a) =", even_filter(a))
 
     # Ternary conditional operator
-    print("find_min(-3, 4) =", find_min(3, 4))
-    print("find_min(4, -3) =", find_min(4, 3))
+    print("find_min(-3, 4) =", find_min(-3, 4))
+    print("find_min(4, -3) =", find_min(4, -3))
     print("find_min(4, 4) =", find_min(4, 4))
 
     return EXIT_SUCCESS
