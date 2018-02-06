@@ -59,8 +59,9 @@ def question_4(a: list) -> list:
     :param a: A list of integers used to generate the return value
     :return: A list of cubes of the given list values is returned.
     """
+    one_again = [x**3 for x in a]
     # TODO: Implement me properly.
-    return []
+    return one_again
 
 
 def question_5(a: list) -> list:
@@ -70,6 +71,7 @@ def question_5(a: list) -> list:
     :param a: A list of integers used to generate the return value
     :return: A list of values filtered out from the given list containing values that are divisible by 3.
     """
+
     # TODO: Implement me properly.
     return []
 
