@@ -7,6 +7,7 @@ The purpose of this lab is to practice working with Python's higher order functi
 from functools import reduce # needed for use in question_3()
 
 # Useful named constant used in main()
+# http://www.u.arizona.edu/~erdmann/mse350/topics/list_comprehensions.html <- v useful keep link
 EXIT_SUCCESS = 0
 
 
@@ -17,14 +18,11 @@ def question_1(a: list) -> list:
     :param a: A list of integers used to generate the return value
     :return: A list of cubes of the given list values is returned.
     """
-    l = []
-    for i in a:
-        val = map((lambda x: x**3),i)
-        l.append(val)
-        print(val)
-    print(val)
+
+    cube = list(map(lambda x: x**3,a))
+
     # TODO: Implement me properly.
-    return l
+    return cube
 
 
 def question_2(a: list) -> list:
@@ -34,8 +32,10 @@ def question_2(a: list) -> list:
     :param a: A list of integers used to generate the return value
     :return: A list of values filtered out from the given list containing values that are divisible by 3.
     """
+    is_divide = list(filter(lambda x: x%3==0,a))
+
     # TODO: Implement me properly.
-    return []
+    return is_divide
 
 
 def question_3(a: list) -> str:
