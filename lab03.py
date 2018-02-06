@@ -8,6 +8,7 @@ from functools import reduce # needed for use in question_3()
 
 # Useful named constant used in main()
 # http://www.u.arizona.edu/~erdmann/mse350/topics/list_comprehensions.html <- v useful keep link
+# http://www.bogotobogo.com/python/python_fncs_map_filter_reduce.php <- this one too
 EXIT_SUCCESS = 0
 
 
@@ -46,8 +47,9 @@ def question_3(a: list) -> str:
     :param a: A list to reduce as prescribed.
     :return: The string resulting from the concatenation of the digits in the given list.
     """
+    conc = reduce(lambda x,y:str(x)+str(y),a)
     # TODO: Implement me properly.
-    return ''
+    return conc
 
 
 def question_4(a: list) -> list:
